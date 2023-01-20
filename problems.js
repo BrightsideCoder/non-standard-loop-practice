@@ -1,6 +1,16 @@
 function oddIndices(arr) {
     // Return an array containing all the odd indices in the array
     // Your code here
+    let odds = [];
+
+    for (let i = 0; i < arr.length; i++)
+    {
+        if (arr[i] % 2 === 0)
+        {
+            odds.push(arr[i]);
+        }
+    }
+    return odds;
 }
 
 function oddReverse(arr) {
