@@ -16,16 +16,35 @@ function oddIndices(arr) {
 function oddReverse(arr) {
     // Return an array containing all the odd indices starting from the end
     // Your code here
+    let arrFromEnd = [];
+
+    for (let i = arr.length - 1; i >= 0; i--)
+    {
+        if (arr[i] % 2 === 0)
+        {
+            arrFromEnd.push(arr[i]);
+        }
+    }
+    return arrFromEnd;
 }
 
 function secondPower(arr) {
     // Return an array containing all indices that are powers of 2
     // Your code here
+    let powersArr = [];
+
+    for (let i = 1; i < arr.length; i *= 2)
+    {
+        powersArr.push(arr[i]);
+    }
+    return powersArr;
 }
 
 function nthPower(arr, n) {
     // Return an array containing all indices that are powers of n
     // Your code here
+    let newArr = [];
+
 }
 
 function firstHalf(arr) {
