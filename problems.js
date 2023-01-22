@@ -45,18 +45,33 @@ function nthPower(arr, n) {
     // Your code here
     let newArr = [];
 
+    for (let i = 1; i < arr.length; i *= n)
+    {
+        newArr.push(arr[i]);
+    }
+    return newArr;
 }
 
 function firstHalf(arr) {
     // Return an array containing the first half of an array
     // Include middle index on odd length arr
     // Your code here
+    let halfway = Math.ceil(arr.length / 2);
+
+    let newArr = arr.slice(0, halfway);
+
+    return newArr;
 }
 
 function secondHalf(arr) {
     // Return an array containing the second half of an array
     // Exclude middle index on odd length arr
     // Your code here
+    let lasthalf = Math.ceil(arr.length / 2);
+
+    let newArr = arr.slice(lasthalf);
+
+    return newArr
 }
 
 module.exports = {
